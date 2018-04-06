@@ -1,5 +1,5 @@
 ''' Menu Calculator v.01 By Andrew Ault
-4/5/18 - 4/6/18
+4/5/18
 '''
 userinput = ""
 print("Welcome to Menu Calculator! Press Enter to contiune.")
