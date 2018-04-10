@@ -1,6 +1,8 @@
 ''' Menu Calculator v.01 By Andrew Ault
 4/5/18
 '''
+myMenu = {1:8.99,2:11.99,3:14.99,4:4.99,5:3.99}
+totalPrice = 0
 userinput = ""
 manyinput = True
 print("Welcome to Menu Calculator! Press Enter to contiune.")
@@ -29,3 +31,19 @@ while userinput != "quit":
         except:
             print("Oof, not a number!")
             continue
+    totalPrice += myMenu[userinput] * howmany
+while True:
+    split = input("Are you splitting the bill with anyone?: ").lower()
+    if split != "yes" and split != "no":
+        print("Oof, not a yes or no!")
+        continue
+    if split == "yes":
+        splityes = input("How many?")
+    try:
+        splityes = int(splityes)
+        totalprice = totalPrice / splityes
+        break
+    except:
+        print("Oof thats not a number kid!")
+        continue
+print("Your total is: " + str(totalPrice))
