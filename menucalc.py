@@ -1,4 +1,4 @@
-''' Menu Calculator v.01 By Andrew Ault
+''' Menu Calculator v1.0 By Andrew Ault
 4/5/18
 '''
 myMenu = {1:8.99,2:11.99,3:14.99,4:4.99,5:3.99}
